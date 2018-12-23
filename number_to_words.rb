@@ -52,7 +52,7 @@ class NumberToWords
   end
 
   def read_dictionary
-    file_path = '/Users/maheshanethala/Downloads/dictionary.txt'
+    file_path = './dictionary.txt'
     File.foreach(file_path) do |word|
       word = word.chop.downcase
       dictionary[word.length] = dictionary[word.length].nil? ? [word] : dictionary[word.length].push(word)
